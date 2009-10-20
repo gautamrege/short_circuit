@@ -1,0 +1,29 @@
+# Given a closed electrical circuit, we need to identify the redundant elements.
+# For the sake of simplicity, we shall assume only resistors between vairous 
+# points. Electricity will flow through the path of least resistance!
+# Source of electricity is A and end-point is G.
+#
+# The idea of the program is to find the redundant resistors
+# 
+# As shown in the diagram we can 'translate' load between points
+# into any simple data structures. For example:
+# [
+#  [ A, B, 50],
+#  [ A, D, 150],
+#  [ B, C, 250],
+#  [ B, E, 250],
+#  [ C, E, 350],
+#  [ C, D, 300],
+#  [ C, F, 100],
+#  [ D, F, 400],
+#  [ E, G, 200],
+#  [ F, G, 100],
+# ]
+#
+# Feel free to use any other data structures as long as assumptions are simple
+# and understandable. Start and End points may be hard-coded in the script or 
+# can be taken as command line parameters, whichever you feel is convinient.
+#
+# In the above example, redundant resitoirs are: R1, R5, R6, R7, R10, R4
+#
+
