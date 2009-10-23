@@ -5,6 +5,8 @@ This folder contains all the RPCFN#3 solutions.
 3. Commit to git.
 
 4. Each commit can be commented by any of the collaborators.
+Note: skeleton directory can be copied to provide for test and lib directories
+      mileage will vary.
 
 Enjoy!
 - Gautam
