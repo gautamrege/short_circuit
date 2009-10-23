@@ -64,17 +64,14 @@ class ShortCircuit
             circuit[node].delete path[-1] if path[-1]
         end
 
-        # remove end node as its the end-point
-        circuit.delete @end
-
         # Actual pretty printing!
         circuit.each_pair do |key, value|
-            value.delete_if {|k,v| circuit.has_key?(k) and circuit[k].has_key?(key) }
+            # remove the back-references
+            value.keys.each { |k| circuit[k].delete(key) if circuit.has_key?(k) }
             value.each_pair do |node, resistance|
                @redundant_resistors << [ key, node, resistance ]
             end
         end
-
     end
 
 end
