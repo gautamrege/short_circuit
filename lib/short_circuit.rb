@@ -3,11 +3,12 @@
 class ShortCircuit
     attr_accessor :lowest_load, :redundant_resistors, :shortest_path
 
+    Infinity = 1.0 / 0 # This is the answer to the maximum resistance question.
     def initialize(circuit, source, destination)
         @circuit = circuit
         @start = source
         @end = destination
-        @lowest_load = 100000 # maximum possible resistance?
+        @lowest_load = Infinity # maximum possible resistance is Infinity!
         @redundant_resistors = []
     end
     
