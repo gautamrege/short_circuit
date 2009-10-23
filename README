@@ -29,7 +29,7 @@ and understandable.
 The source and the end-point may be hard-coded in the script or can be taken as 
 command line parameters, whichever you feel is convinient.
 
-In the above example, the output expected is:
+In the above example, the output expected MUST be the following array of arrays:
 [ 
   [ 'A', 'B', 50 ],
   [ 'B', 'C', 250],
