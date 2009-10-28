@@ -16,7 +16,7 @@ into any simple data structures. For example:
   [ 'B', 'C', 250],
   [ 'B', 'E', 250],
   [ 'C', 'E', 350],
-  [ 'C', 'D', 300],
+  [ 'C', 'D', 50],
   [ 'C', 'F', 100],
   [ 'D', 'F', 400],
   [ 'E', 'G', 200],
