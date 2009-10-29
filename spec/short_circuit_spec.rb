@@ -57,7 +57,9 @@ describe 'Short Circuit' do
 
         #run.shortest_path.should == [ 'A', 'D', 'C', 'F', 'G' ]
         #run.lowest_load.should == 400
-        run.redundant_resistors.should == [["A", "B", 50], ["B", "C", 250], ["B", "E", 250], ["C", "E", 350], ["D", "F", 400], ["E", "G", 200]]
+        run.redundant_resistors.should == [["A", "B", 50], ["B", "C", 250],
+					   ["B", "E", 250], ["C", "E", 350],
+					   ["D", "F", 400], ["E", "G", 200]]
 
     end
 
@@ -69,7 +71,9 @@ describe 'Short Circuit' do
 
         #run.shortest_path.should == [ 'B', 'A', 'D', 'C', 'F' ]
         #run.lowest_load.should == 350
-        run.redundant_resistors.should ==  [["B", "C", 250], ["B", "E", 250], ["C", "E", 350], ["D", "F", 400], ["E", "G", 200], ["F", "G", 100]]
+        run.redundant_resistors.should ==  [["B", "C", 250], ["B", "E", 250], 
+					    ["C", "E", 350], ["D", "F", 400], 
+					    ["E", "G", 200], ["F", "G", 100]]
 
     end
 
@@ -81,10 +85,12 @@ describe 'Short Circuit' do
 
         #run.shortest_path.should == [ 'E', 'B', 'A']
         #run.lowest_load.should == 300
-        run.redundant_resistors.should == [["A", "D", 150], ["B", "C", 250], ["C", "D", 50], ["C", "E", 350], ["C", "F", 100], ["D", "F", 400], ["E", "G", 200], ["F", "G", 100]]
+        run.redundant_resistors.should == [["A", "D", 150], ["B", "C", 250], 
+					   ["C", "D", 50], ["C", "E", 350], 
+					   ["C", "F", 100], ["D", "F", 400], 
+					   ["E", "G", 200], ["F", "G", 100]]
 
     end
 
 end
-
  
