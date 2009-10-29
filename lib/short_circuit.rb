@@ -51,11 +51,10 @@ class ShortCircuit
     def get_redundant_resistors
 
         # Make a copy of the shortest path array
-        path = Array.new(@shortest_path)
+        path = @shortest_path.dup 
 
-        # Make a copy of the hash -- any better way?
-        circuit = @circuit.reject { |key, value| false }
-
+        # Make a copy of the hash
+        circuit = @circuit.dup
 
         # remove the shortest path nodes from the tree
         # along with its back reference
