@@ -6,11 +6,16 @@
 class ShortCircuit
     attr_accessor :lowest_load, :redundant_resistors, :shortest_path
 
+    private :lowest_load=, :redundant_resistors=, :shortest_path=
+
 =begin rdoc
     Infinity = 1.0 / 0 => Infinity
 =end
 
-    Infinity = 1.0 / 0 # This is the answer to the maximum resistance question.
+    Infinity = 1.0 / 0 unless defined?(Infinity) # This is the answer to the maximum resistance question.
+
+    # Initialiation requirse a circuit, a source (beginning) and a destination.
+
     def initialize(circuit, source, destination)
         @circuit = circuit
         @start = source
@@ -19,11 +24,10 @@ class ShortCircuit
         @redundant_resistors = []
     end
     
-    #
-    # A recursive funtion where we do a depth-first traversal to find the 
-    # shortest path. A global variable stores the shortest path and the 
+    # A recursive function where we do a depth-first traversal to find the 
+    # shortest path. An accessor (instance method and variable stores the shortest path and the 
     # lowest load
-    #
+   
     def get_shortest_path(traversed, node, weight)
         # if node is in the traversed list, return.
         return if traversed.include? node

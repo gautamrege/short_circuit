@@ -7,6 +7,6 @@ Gem::Specification.new do |s|
     s.email = %q{gautam@joshsoftware.com}
     s.summary = %q{A program to find out redundant resistors in a closed loop circuit}
     s.homepage = %q{http://www.joshsoftware.com}
-    s.files = [ "bin/short_circuit.cmd", "lib/short_circuit.rb", "README", "spec/short_circuit_spec.rb", "circuit_diagram.png" ]
+    s.files = [ "bin/short_circuit.cmd", "lib/short_circuit.rb", "README", "test/short_circuit_spec.rb", "circuit_diagram.png" ]
 end
 
