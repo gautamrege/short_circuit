@@ -1,7 +1,14 @@
-
+=begin rdoc
+  This program will determine the shortest path of resistance in a short circuit.
+  This is a stand alone program, but can be used as a library
+=end
 
 class ShortCircuit
     attr_accessor :lowest_load, :redundant_resistors, :shortest_path
+
+=begin rdoc
+    Infinity = 1.0 / 0 => Infinity
+=end
 
     Infinity = 1.0 / 0 # This is the answer to the maximum resistance question.
     def initialize(circuit, source, destination)
@@ -21,7 +28,7 @@ class ShortCircuit
         # if node is in the traversed list, return.
         return if traversed.include? node
     
-        # push teh node as we have traversed it
+        # push the node as we have traversed it
         traversed.push node
         
         # iterate throught the node's hash
