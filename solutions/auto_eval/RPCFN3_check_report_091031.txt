@@ -1,0 +1,6 @@
+>ruby auto_check.rb
+                     name:   tests   assertions   failures   errors   skips
+                    Ashbb:       4            4          0        0       0
+             JamesDaniels:       4            4          0        0       0
+         HarshadRWankhede:       4            4          1        0       0
+>Exit code: 0
