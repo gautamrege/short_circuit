@@ -2,7 +2,7 @@
 
 Temporary_Program = 'code.rb'
 Dir.glob("./solutions/*.rb").each do |file|
-  name = File.basename(file, '.rb')
+  name, = File.basename(file).split('_')
   next if name == name.downcase
   
   open Temporary_Program, 'w' do |out|
