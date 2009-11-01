@@ -47,12 +47,9 @@ class Circuit
   
 end
 
-<<<<<<< HEAD:solutions/JamesDaniels/lib/JamesDaniels.rb
 # edited the following for unit-test by ashbb
 
 $test0 =<<EOS
-=======
->>>>>>> work:solutions/JamesDaniels/lib/JamesDaniels.rb
 A = 0; B = 1; C = 2; D = 3; E = 4; F = 5; G = 6;
 test = Circuit.new([
    [ A, B, 50],
@@ -66,7 +63,6 @@ test = Circuit.new([
    [ E, G, 200],
    [ F, G, 100]
 ])
-<<<<<<< HEAD:solutions/JamesDaniels/lib/JamesDaniels.rb
 EOS
 
 $test1 =<<EOS
@@ -120,18 +116,3 @@ def bridge_method test
   p (tmp = test.unused_resistors_with_alpha_labels)
   tmp.collect{|a, b,| a + b}
 end
-=======
-if test.unused_resistors_with_alpha_labels == [
-  [ 'A', 'B', 50 ],
-  [ 'B', 'C', 250],
-  [ 'B', 'E', 250],
-  [ 'C', 'E', 350],
-  [ 'D', 'F', 400],
-  [ 'E', 'G', 200],
-]
-  puts "It works!"
-else
-  p test.unused_resistors_with_alpha_labels
-  puts "Broken :0("
-end
->>>>>>> work:solutions/JamesDaniels/lib/JamesDaniels.rb

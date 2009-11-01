@@ -2,23 +2,6 @@
 #
 # The ciruit can be represted as follows assuming the flow to be in any direction.
 
-<<<<<<< HEAD:solutions/HarshadRWankhede/lib/HarshadRWankhede.rb
-=======
-@circuits = [
-  ['A','B',50],
-  ['A','D',150],
-  ['B','C',250],
-  ['D','C',50],
-  ['B','E',250],
-  ['D','F',400],
-  ['C','F',100],
-  ['C','E',350],
-  ['F','G',100],
-  ['E','G',200]
-
-]
-
->>>>>>> work:solutions/HarshadRWankhede/lib/HarshadRWankhede.rb
 
 # Yet another representation
 #@circuits = [
@@ -34,14 +17,14 @@
 #  ['A','D',150]
 #
 #]
-
+=begin
 @redundant_resistors = [] #to store all the redundant resistors
 @start_node = 'A' #to store the startt node
-@end_node = 'G' #to store the end node
+#@end_node = 'G' #to store the end node
 @traversal_array = [] #to store all the possible circuits
 @minimal_circuit = '' #to store the minimum resistance circuit
 @minimum_total = -1 #to store the total resistance
-
+=end
 #A recursive function that identifies all the possible circuits.
 #Calculates the minimum possible circuit and stores it in @minimal_circuit.
 #The function accepts three parameters in the order starting node of circuit, first node traversed and the total resistance which is 0 at the start
@@ -73,7 +56,6 @@ def all_circuits(current_node,traversed,prev_total)
     end
   end
 end
-<<<<<<< HEAD:solutions/HarshadRWankhede/lib/HarshadRWankhede.rb
 
 
 # edited the following for auto_test by ashbb
@@ -148,27 +130,17 @@ def bridge_method test
   @minimal_circuit = '' #to store the minimum resistance circuit
   @minimum_total = -1 #to store the total resistance
   all_circuits(@start_node,'A',0)
-=======
->>>>>>> work:solutions/HarshadRWankhede/lib/HarshadRWankhede.rb
 
-all_circuits(@start_node,'A',0)
-
-#Calculate all the redundant resistors
-@circuits.each_index do |index|
-  if first_occurence = @minimal_circuit.index(@circuits[index][0])
-    if (first_occurence+1) == @minimal_circuit.index(@circuits[index][1])
-      next
+  #Calculate all the redundant resistors  
+  @circuits.each_index do |index|
+    if first_occurence = @minimal_circuit.index(@circuits[index][0])
+      if (first_occurence+1) == @minimal_circuit.index(@circuits[index][1])
+        next
+      end
     end
+    @redundant_resistors.push(@circuits[index])
   end
-  @redundant_resistors.push(@circuits[index])
-end
 
-
-#Display the result
-puts "Minimal circuit:  " +  @minimal_circuit
-puts "Minimal Total:    " + @minimum_total.to_s
-
-<<<<<<< HEAD:solutions/HarshadRWankhede/lib/HarshadRWankhede.rb
   #Display the result 
   puts "Minimal circuit:  " +  @minimal_circuit
   puts "Minimal Total:    " + @minimum_total.to_s
@@ -177,7 +149,3 @@ puts "Minimal Total:    " + @minimum_total.to_s
   p @redundant_resistors
   @redundant_resistors.collect{|a, b,| a + b}
 end
-=======
-print "Result is --->    "
-p @redundant_resistors
->>>>>>> work:solutions/HarshadRWankhede/lib/HarshadRWankhede.rb

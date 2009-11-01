@@ -10,3 +10,9 @@ Note: skeleton directory can be copied to provide for test and lib directories
 
 Enjoy!
 - Gautam
+
+-----------------------------------------------------------------
+5. Participant's original code is stored under the folder created by #1.
+6. The auto_eval/solutions directory holds the codes edited for auto_check.rb.
+
+- ashbb

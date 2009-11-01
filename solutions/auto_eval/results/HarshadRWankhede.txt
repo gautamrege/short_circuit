@@ -55,10 +55,17 @@ Minimal circuit:  ABCDG
 Minimal Total:    40
 Result is --->    [["A", "C", 100], ["A", "D", 100], ["B", "D", 100], ["B", "E", 10], ["C", "F", 10]]
 .
+<<<<<<< HEAD:solutions/results/HarshadRWankhede.txt
 Finished in 0.359375 seconds.
 
   1) Failure:
 test_example_1(TestShortCircuit) [C:/rubyprograms/RPCFN/Gautam Rege/RPCFN_#3_TestCase.rb:20]:
+=======
+Finished in 0.390625 seconds.
+
+  1) Failure:
+test_example_1(TestShortCircuit) [C:/rubyprograms/RPCFN/Gautam_Rege/short_circuit/solutions/auto_eval/RPCFN_#3_TestCase.rb:20]:
+>>>>>>> work:solutions/auto_eval/results/HarshadRWankhede.txt
 <["AB", "BC", "BE", "CE", "CF", "DG", "EH"]> expected but was
 <["AB", "BC", "BE", "CD", "CE", "CF", "DG", "EH"]>.
 
