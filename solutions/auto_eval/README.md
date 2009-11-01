@@ -5,7 +5,6 @@ auto_check
 - /results   : outputs of auto_check
 - /imgs      : pics of test cases
 - RPCFN_#3_TestCase.rb : unit test code
-- RPCFN3_check_report_091031.txt : summary of auto_check
 
 usage
 -----
