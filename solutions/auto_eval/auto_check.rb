@@ -10,6 +10,9 @@ Dir.glob("./solutions/*.rb").each do |file|
     out << IO.read(file)
   end
 
+  Results_Directory = 'results'
+  Dir.mkdir Results_Directory unless File::directory? Results_Directory
+
   fname = "./results/#{name}.txt"
   open(fname, 'w'){|f| f << "***** #{name} *****\n\n"}
   eval "`ruby #{Temporary_Program} >> #{fname}`"
