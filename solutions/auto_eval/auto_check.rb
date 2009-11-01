@@ -1,17 +1,18 @@
 # auto_check.rb
 
+Temporary_Program = 'code.rb'
 Dir.glob("./solutions/*.rb").each do |file|
   name = File.basename(file, '.rb')
   next if name == name.downcase
   
-  open 'code.rb', 'w' do |out|
+  open Temporary_Program, 'w' do |out|
     out << "require 'RPCFN_#3_TestCase'\n\n"
     out << IO.read(file)
   end
 
   fname = "./results/#{name}.txt"
   open(fname, 'w'){|f| f << "***** #{name} *****\n\n"}
-  eval "`ruby code.rb >> #{fname}`"
+  eval "`ruby #{Temporary_Program} >> #{fname}`"
 end
 
 Result = Struct.new :name, :score
@@ -27,6 +28,6 @@ format = "%25s: %7d %12d %10d %8d %7d"
 puts format.gsub('d', 's') % %w[name tests assertions failures errors skips]
 results.each{|r| puts format % [r.name, r.score].flatten}
 
-
+File.delete Temporary_Program if File.exists? Temporary_Program 
 
   
