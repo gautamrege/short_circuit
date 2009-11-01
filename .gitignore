@@ -1,0 +1,6 @@
+*.swp
+.*.swp
+.project
+.loadpath
+Thumbs.db
+
