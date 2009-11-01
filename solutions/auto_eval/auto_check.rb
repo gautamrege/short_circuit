@@ -26,7 +26,7 @@ results = results.sort_by{|e| e.score[2].to_i}
 
 format = "%25s: %7d %12d %10d %8d %7d"
 puts format.gsub('d', 's') % %w[name tests assertions failures errors skips]
-results.each{|r| puts format % [r.name, r.score].flatten}
+results.each{|r| puts format % [r.name, r.score, 0].flatten}
 
 File.delete Temporary_Program if File.exists? Temporary_Program 
 
