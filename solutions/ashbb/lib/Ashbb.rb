@@ -1,42 +1,8 @@
-<<<<<<< HEAD:solutions/ashbb/lib/Ashbb.rb
-$test0 =<<EOS
-  PATH = %w[AB AD BC DC BE DF CE CF EG GF]
-  RESIST = [50, 150, 250, 50, 250, 400, 350, 100, 200, 100]
-  CIRCUIT = Hash[*PATH.zip(RESIST).flatten]
-  START, GOAL = 'A', 'G'
-  NODES, N, L = ('A'..'G').to_a - [START], 10000, 6
-EOS
-
-$test1 =<<EOS
-  PATH = %w[AB AD BC DC BE CE CF EH HF DG GF CG]
-  RESIST = [50, 150, 250, 50, 250, 350, 100, 200, 100, 350, 50, 30]
-  CIRCUIT = Hash[*PATH.zip(RESIST).flatten]
-  START, GOAL = 'A', 'H'
-  NODES, N, L = ('A'..'H').to_a - [START], 100000, 6
-EOS
-
-$test2 =<<EOS
-  PATH = %w[AB AC AD BC BD CD]
-  RESIST = [10, 100, 100, 10, 100, 10]
-  CIRCUIT = Hash[*PATH.zip(RESIST).flatten]
-  START, GOAL = 'A', 'D'
-  NODES, N, L = ('A'..'D').to_a - [START], 10000, 6
-EOS
-
-$test3 =<<EOS
-  PATH = %w[AB AC AD BC BD CD BE CF DG]
-  RESIST = [10, 100, 100, 10, 100, 10, 10, 10, 10]
-  CIRCUIT = Hash[*PATH.zip(RESIST).flatten]
-  START, GOAL = 'A', 'G'
-  NODES, N, L = ('A'..'G').to_a - [START], 10000, 6
-EOS
-=======
 PATH = %w[AB AD BC DC BE DF CE CF EG GF]
 RESIST = [50, 150, 250, 50, 250, 400, 350, 100, 200, 100]
 CIRCUIT = Hash[*PATH.zip(RESIST).flatten]
 START, GOAL = 'A', 'G'
 NODES, N, L = ('A'..'G').to_a - [START], 10000, 6
->>>>>>> work:solutions/ashbb/lib/Ashbb.rb
 
 def resistance path
   CIRCUIT[path] or CIRCUIT[path.reverse]
@@ -61,24 +27,6 @@ def redundant path
   PATH - passed
 end
 
-<<<<<<< HEAD:solutions/ashbb/lib/Ashbb.rb
-# edited the following for auto_test by ashbb
-def bridge_method test
-  eval test
-  shortest_path, lowest_load = '', 100000
-  N.times do
-    path, dist = calc(random_path)
-    (shortest_path, lowest_load =  path, dist) if dist and dist < lowest_load
-  end
-  p shortest_path, lowest_load, redundant(shortest_path) # debug
-  redundant(shortest_path)
-end
-
-#bridge_method $test0
-#bridge_method $test1
-#bridge_method $test2
-#bridge_method $test3
-=======
 shortest_path, lowest_load = '', 10000
 N.times do
   path, dist = calc(random_path)
@@ -86,4 +34,3 @@ N.times do
 end
 
 p shortest_path, lowest_load, redundant(shortest_path)
->>>>>>> work:solutions/ashbb/lib/Ashbb.rb

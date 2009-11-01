@@ -47,12 +47,6 @@ class Circuit
   
 end
 
-<<<<<<< HEAD:solutions/JamesDaniels/lib/JamesDaniels.rb
-# edited the following for unit-test by ashbb
-
-$test0 =<<EOS
-=======
->>>>>>> work:solutions/JamesDaniels/lib/JamesDaniels.rb
 A = 0; B = 1; C = 2; D = 3; E = 4; F = 5; G = 6;
 test = Circuit.new([
    [ A, B, 50],
@@ -66,61 +60,6 @@ test = Circuit.new([
    [ E, G, 200],
    [ F, G, 100]
 ])
-<<<<<<< HEAD:solutions/JamesDaniels/lib/JamesDaniels.rb
-EOS
-
-$test1 =<<EOS
-A = 0; B = 1; C = 2; D = 3; E = 4; F = 5; G = 6; H = 7;
-test = Circuit.new([
-   [ A, B, 50],
-   [ A, D, 150],
-   [ B, C, 250],
-   [ B, E, 250],
-   [ C, E, 350],
-   [ C, D, 50],
-   [ C, F, 100],
-   #[ D, F, 400],
-   [ E, H, 200],
-   [ F, H, 100],
-   [ D, G, 350],
-   [ G, F, 50],
-   [ C, G, 30]
-])
-EOS
-
-$test2 =<<EOS
-A = 0; B = 1; C = 2; D = 3; 
-test = Circuit.new([
-   [ A, B, 10],
-   [ A, C, 100],
-   [ A, D, 100],
-   [ B, C, 10],
-   [ B, D, 100],
-   [ C, D, 10]
-])
-EOS
-
-$test3 =<<EOS
-A = 0; B = 1; C = 2; D = 3; E = 4; F = 5; G = 6;
-test = Circuit.new([
-   [ A, B, 10],
-   [ A, C, 100],
-   [ A, D, 100],
-   [ B, C, 10],
-   [ B, D, 100],
-   [ C, D, 10],
-   [ B, E, 10],
-   [ C, F, 10],
-   [ D, G, 10]
-])
-EOS
-
-def bridge_method test
-  eval test
-  p (tmp = test.unused_resistors_with_alpha_labels)
-  tmp.collect{|a, b,| a + b}
-end
-=======
 if test.unused_resistors_with_alpha_labels == [
   [ 'A', 'B', 50 ],
   [ 'B', 'C', 250],
@@ -134,4 +73,3 @@ else
   p test.unused_resistors_with_alpha_labels
   puts "Broken :0("
 end
->>>>>>> work:solutions/JamesDaniels/lib/JamesDaniels.rb

@@ -2,8 +2,6 @@
 #
 # The ciruit can be represted as follows assuming the flow to be in any direction.
 
-<<<<<<< HEAD:solutions/HarshadRWankhede/lib/HarshadRWankhede.rb
-=======
 @circuits = [
   ['A','B',50],
   ['A','D',150],
@@ -18,7 +16,6 @@
 
 ]
 
->>>>>>> work:solutions/HarshadRWankhede/lib/HarshadRWankhede.rb
 
 # Yet another representation
 #@circuits = [
@@ -73,83 +70,6 @@ def all_circuits(current_node,traversed,prev_total)
     end
   end
 end
-<<<<<<< HEAD:solutions/HarshadRWankhede/lib/HarshadRWankhede.rb
-
-
-# edited the following for auto_test by ashbb
-$test0 =<<EOS
-@end_node = 'G'
-@circuits = [
-  ['A','B',50],
-  ['A','D',150],
-  ['B','C',250],
-  ['D','C',50],
-  ['B','E',250],
-  ['D','F',400],
-  ['C','F',100],
-  ['C','E',350],
-  ['F','G',100],
-  ['E','G',200]
-]
-EOS
-
-$test1 =<<EOS
-@end_node = 'H'
-@circuits = [
-   [ 'A', 'B', 50],
-   [ 'A', 'D', 150],
-   [ 'B', 'C', 250],
-   [ 'B', 'E', 250],
-   [ 'C', 'E', 350],
-   [ 'C', 'D', 50],
-   [ 'C', 'F', 100],
-   [ 'E', 'H', 200],
-   [ 'F', 'H', 100],
-   [ 'D', 'G', 350],
-   [ 'G', 'F', 50],
-   [ 'C', 'G', 30]
-]
-EOS
-
-$test2 =<<EOS
-@end_node = 'D'
-@circuits = [
-   [ 'A', 'B', 10],
-   [ 'A', 'C', 100],
-   [ 'A', 'D', 100],
-   [ 'B', 'C', 10],
-   [ 'B', 'D', 100],
-   [ 'C', 'D', 10]
-]
-EOS
-
-$test3 =<<EOS
-@end_node = 'G'
-@circuits = [
-   [ 'A', 'B', 10],
-   [ 'A', 'C', 100],
-   [ 'A', 'D', 100],
-   [ 'B', 'C', 10],
-   [ 'B', 'D', 100],
-   [ 'C', 'D', 10],
-   [ 'B', 'E', 10],
-   [ 'C', 'F', 10],
-   [ 'D', 'G', 10]
-]
-EOS
-
-
-def bridge_method test
-  eval test
-  @redundant_resistors = [] #to store all the redundant resistors
-  @start_node = 'A' #to store the startt node
-  #@end_node = 'G' #to store the end node
-  @traversal_array = [] #to store all the possible circuits
-  @minimal_circuit = '' #to store the minimum resistance circuit
-  @minimum_total = -1 #to store the total resistance
-  all_circuits(@start_node,'A',0)
-=======
->>>>>>> work:solutions/HarshadRWankhede/lib/HarshadRWankhede.rb
 
 all_circuits(@start_node,'A',0)
 
@@ -168,16 +88,5 @@ end
 puts "Minimal circuit:  " +  @minimal_circuit
 puts "Minimal Total:    " + @minimum_total.to_s
 
-<<<<<<< HEAD:solutions/HarshadRWankhede/lib/HarshadRWankhede.rb
-  #Display the result 
-  puts "Minimal circuit:  " +  @minimal_circuit
-  puts "Minimal Total:    " + @minimum_total.to_s
-  
-  print "Result is --->    "
-  p @redundant_resistors
-  @redundant_resistors.collect{|a, b,| a + b}
-end
-=======
 print "Result is --->    "
 p @redundant_resistors
->>>>>>> work:solutions/HarshadRWankhede/lib/HarshadRWankhede.rb
