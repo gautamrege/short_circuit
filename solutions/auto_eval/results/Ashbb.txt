@@ -15,6 +15,6 @@ Started
 40
 ["AC", "AD", "BD", "BE", "CF"]
 .
-Finished in 4.265625 seconds.
+Finished in 4.093750 seconds.
 
 4 tests, 4 assertions, 0 failures, 0 errors, 0 skips

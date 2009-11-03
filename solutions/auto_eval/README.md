@@ -15,12 +15,15 @@ You can get outputs under the `result` directory and get a summary on console.
 summary of auto_check
 ---------------------
 
-**November 02, 2009**
+**November 03, 2009**
 
 <pre>
                      name:   tests   assertions   failures   errors   skips
                     Ashbb:       4            4          0        0       0
                 BenMarini:       4            4          0        0       0
+            ValerioFarias:       4            4          0        0       0
+                     Mark:       4            4          0        0       0
              JamesDaniels:       4            4          0        0       0
          HarshadRWankhede:       4            4          1        0       0
+           PrakashSejwani:       4            4          4        0       0
 </pre>

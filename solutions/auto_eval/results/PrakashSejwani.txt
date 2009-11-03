@@ -1,0 +1,28 @@
+***** PrakashSejwani *****
+
+Loaded suite code
+Started
+FFFF
+Finished in 0.015625 seconds.
+
+  1) Failure:
+test_example_0(TestShortCircuit) [C:/rubyprograms/RPCFN/Gautam_Rege/short_circuit/solutions/auto_eval/RPCFN_#3_TestCase.rb:15]:
+<["AB", "BC", "BE", "CE", "DF", "EG"]> expected but was
+<["AD", "BC", "BE", "CE", "CF", "DF", "EG"]>.
+
+  2) Failure:
+test_example_1(TestShortCircuit) [C:/rubyprograms/RPCFN/Gautam_Rege/short_circuit/solutions/auto_eval/RPCFN_#3_TestCase.rb:20]:
+<["AB", "BC", "BE", "CE", "CF", "DG", "EH"]> expected but was
+<["AD", "BC", "CD", "CE", "CF", "CG", "DG", "EH", "FG"]>.
+
+  3) Failure:
+test_example_2(TestShortCircuit) [C:/rubyprograms/RPCFN/Gautam_Rege/short_circuit/solutions/auto_eval/RPCFN_#3_TestCase.rb:25]:
+<["AC", "AD", "BD"]> expected but was
+<["AC", "AD", "BC", "BD", "CD"]>.
+
+  4) Failure:
+test_example_3(TestShortCircuit) [C:/rubyprograms/RPCFN/Gautam_Rege/short_circuit/solutions/auto_eval/RPCFN_#3_TestCase.rb:30]:
+<["AC", "AD", "BD", "BE", "CF"]> expected but was
+<["AC", "AD", "BC", "BD", "BE", "CD", "DG"]>.
+
+4 tests, 4 assertions, 4 failures, 0 errors, 0 skips
