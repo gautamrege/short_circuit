@@ -7,6 +7,6 @@ Started
 .[["A", "C", 100], ["A", "D", 100], ["B", "D", 100]]
 .[["A", "C", 100], ["A", "D", 100], ["B", "D", 100], ["B", "E", 10], ["C", "F", 10]]
 .
-Finished in 0.281250 seconds.
+Finished in 0.218750 seconds.
 
 4 tests, 4 assertions, 0 failures, 0 errors, 0 skips

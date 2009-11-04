@@ -55,7 +55,7 @@ Minimal circuit:  ABCDG
 Minimal Total:    40
 Result is --->    [["A", "C", 100], ["A", "D", 100], ["B", "D", 100], ["B", "E", 10], ["C", "F", 10]]
 .
-Finished in 0.328125 seconds.
+Finished in 0.296875 seconds.
 
   1) Failure:
 test_example_1(TestShortCircuit) [C:/rubyprograms/RPCFN/Gautam_Rege/short_circuit/solutions/auto_eval/RPCFN_#3_TestCase.rb:20]:
