@@ -1,0 +1,242 @@
+***** PatHarty *****
+
+Loaded suite code
+Started
+Successful Path Found: ABCDFG Resistance was: 850
+Successful Path Found: ABCFG Resistance was: 500
+Successful Path Found: ABCEG Resistance was: 850
+Successful Path Found: ABECDFG Resistance was: 1200
+Successful Path Found: ABECFG Resistance was: 850
+Successful Path Found: ABEG Resistance was: 500
+Successful Path Found: ADCBEG Resistance was: 900
+Successful Path Found: ADCFG Resistance was: 400
+Successful Path Found: ADCEG Resistance was: 750
+Successful Path Found: ADFCBEG Resistance was: 1350
+Successful Path Found: ADFCEG Resistance was: 1200
+Successful Path Found: ADFG Resistance was: 650
+Path of Least Resistance: ADCEG Resistance: 400
+Unneeded Resistor List:
+FSuccessful Path Found: ABCEH Resistance was: 850
+Successful Path Found: ABCDGFH Resistance was: 850
+Successful Path Found: ABCFH Resistance was: 500
+Successful Path Found: ABCGFH Resistance was: 480
+Successful Path Found: ABECDGFH Resistance was: 1200
+Successful Path Found: ABECFH Resistance was: 850
+Successful Path Found: ABECGFH Resistance was: 830
+Successful Path Found: ABEH Resistance was: 500
+Successful Path Found: ADCBEH Resistance was: 900
+Successful Path Found: ADCEH Resistance was: 750
+Successful Path Found: ADCFH Resistance was: 400
+Successful Path Found: ADCGFH Resistance was: 380
+Successful Path Found: ADGFCBEH Resistance was: 1350
+Successful Path Found: ADGFCEH Resistance was: 1200
+Successful Path Found: ADGFH Resistance was: 650
+Successful Path Found: ADGCBEH Resistance was: 1230
+Successful Path Found: ADGCEH Resistance was: 1080
+Successful Path Found: ADGCFH Resistance was: 730
+Path of Least Resistance: ADCBEH Resistance: 380
+Unneeded Resistor List:
+FSuccessful Path Found: ABCD Resistance was: 30
+Successful Path Found: ABD Resistance was: 110
+Successful Path Found: ACBD Resistance was: 210
+Successful Path Found: ACD Resistance was: 110
+Successful Path Found: AD Resistance was: 100
+Path of Least Resistance:  Resistance: 30
+Unneeded Resistor List:
+ESuccessful Path Found: ABCDG Resistance was: 40
+Successful Path Found: ABDG Resistance was: 120
+Successful Path Found: ACBDG Resistance was: 220
+Successful Path Found: ACDG Resistance was: 120
+Successful Path Found: ADG Resistance was: 110
+Path of Least Resistance:  Resistance: 40
+Unneeded Resistor List:
+E
+Finished in 0.015625 seconds.
+
+  1) Failure:
+test_example_0(TestShortCircuit) [C:/rubyprograms/RPCFN/Gautam_Rege/short_circuit/solutions/auto_eval/RPCFN_#3_TestCase.rb:15]:
+<["AB", "BC", "BE", "CE", "DF", "EG"]> expected but was
+<["AB", "BC", "BE", "CF", "DF", "FG"]>.
+
+  2) Failure:
+test_example_1(TestShortCircuit) [C:/rubyprograms/RPCFN/Gautam_Rege/short_circuit/solutions/auto_eval/RPCFN_#3_TestCase.rb:20]:
+<["AB", "BC", "BE", "CE", "CF", "DG", "EH"]> expected but was
+<["AB", "CE", "CF", "CG", "DG", "FG", "FH"]>.
+
+  3) Error:
+test_example_2(TestShortCircuit):
+NoMethodError: undefined method `length' for nil:NilClass
+    code.rb:120:in `findUnneededResistors'
+    code.rb:271:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:421:in `bridge_method'
+    C:/rubyprograms/RPCFN/Gautam_Rege/short_circuit/solutions/auto_eval/RPCFN_#3_TestCase.rb:25:in `test_example_2'
+
+  4) Error:
+test_example_3(TestShortCircuit):
+NoMethodError: undefined method `length' for nil:NilClass
+    code.rb:120:in `findUnneededResistors'
+    code.rb:271:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:312:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:300:in `block in findRoute'
+    code.rb:277:in `each'
+    code.rb:277:in `findRoute'
+    code.rb:421:in `bridge_method'
+    C:/rubyprograms/RPCFN/Gautam_Rege/short_circuit/solutions/auto_eval/RPCFN_#3_TestCase.rb:30:in `test_example_3'
+
+4 tests, 2 assertions, 2 failures, 2 errors, 0 skips
