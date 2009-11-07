@@ -1,0 +1,12 @@
+***** ToddHuss *****
+
+Loaded suite code
+Started
+[["A", "D", 150], ["D", "C", 50], ["C", "F", 100], ["F", "G", 100]]
+.[["A", "D", 150], ["C", "D", 50], ["C", "G", 30], ["G", "F", 50], ["F", "H", 100]]
+.[["A", "B", 10], ["B", "C", 10], ["C", "D", 10]]
+.[["A", "B", 10], ["B", "C", 10], ["C", "D", 10], ["D", "G", 10]]
+.
+Finished in 0.156250 seconds.
+
+4 tests, 4 assertions, 0 failures, 0 errors, 0 skips
