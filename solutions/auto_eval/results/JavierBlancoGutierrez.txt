@@ -1,0 +1,8 @@
+***** JavierBlancoGutierrez *****
+
+Loaded suite code
+Started
+....
+Finished in 0.000000 seconds.
+
+4 tests, 4 assertions, 0 failures, 0 errors, 0 skips
