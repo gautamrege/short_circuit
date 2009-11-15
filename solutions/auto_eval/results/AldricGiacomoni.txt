@@ -1,0 +1,8 @@
+***** AldricGiacomoni *****
+
+Loaded suite code
+Started
+....
+Finished in 0.015625 seconds.
+
+4 tests, 4 assertions, 0 failures, 0 errors, 0 skips

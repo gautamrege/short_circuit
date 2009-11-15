@@ -1,0 +1,25 @@
+***** SogoOhta *****
+
+Loaded suite code
+Started
+.EFF
+Finished in 0.015625 seconds.
+
+  1) Error:
+test_example_1(TestShortCircuit):
+NoMethodError: undefined method `[]' for nil:NilClass
+    code.rb:31:in `search_min_path'
+    code.rb:135:in `bridge_method'
+    C:/rubyprograms/RPCFN/Gautam_Rege/short_circuit/solutions/auto_eval/RPCFN_#3_TestCase.rb:20:in `test_example_1'
+
+  2) Failure:
+test_example_2(TestShortCircuit) [C:/rubyprograms/RPCFN/Gautam_Rege/short_circuit/solutions/auto_eval/RPCFN_#3_TestCase.rb:25]:
+<["AC", "AD", "BD"]> expected but was
+<["AB", "AC", "BC", "BD", "CD"]>.
+
+  3) Failure:
+test_example_3(TestShortCircuit) [C:/rubyprograms/RPCFN/Gautam_Rege/short_circuit/solutions/auto_eval/RPCFN_#3_TestCase.rb:30]:
+<["AC", "AD", "BD", "BE", "CF"]> expected but was
+<["AB", "AC", "BC", "BD", "BE", "CD", "CF"]>.
+
+4 tests, 3 assertions, 2 failures, 1 errors, 0 skips
