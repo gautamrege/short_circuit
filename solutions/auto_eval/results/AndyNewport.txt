@@ -1,0 +1,102 @@
+***** AndyNewport *****
+
+Loaded suite code
+Started
+The following edges make up the full graph:
+[
+  [ "A", "B", 50, ]
+  [ "A", "D", 150, ]
+  [ "B", "C", 250, ]
+  [ "D", "C", 50, ]
+  [ "B", "E", 250, ]
+  [ "D", "F", 400, ]
+  [ "C", "F", 100, ]
+  [ "C", "E", 350, ]
+  [ "F", "G", 100, ]
+  [ "E", "G", 200, ]
+]
+Generating least cost tree from vertex A.
+The shortest path to G is:
+A->D->C->F->G
+The following edges are unused:
+[
+  [ "A", "B", 50, ]
+  [ "B", "C", 250, ]
+  [ "B", "E", 250, ]
+  [ "D", "F", 400, ]
+  [ "C", "E", 350, ]
+  [ "E", "G", 200, ]
+]
+.The following edges make up the full graph:
+[
+  [ "A", "B", 50, ]
+  [ "A", "D", 150, ]
+  [ "B", "C", 250, ]
+  [ "B", "E", 250, ]
+  [ "C", "E", 350, ]
+  [ "C", "D", 50, ]
+  [ "C", "F", 100, ]
+  [ "E", "H", 200, ]
+  [ "F", "H", 100, ]
+  [ "D", "G", 350, ]
+  [ "G", "F", 50, ]
+  [ "C", "G", 30, ]
+]
+Generating least cost tree from vertex A.
+The shortest path to H is:
+A->D->C->G->F->H
+The following edges are unused:
+[
+  [ "A", "B", 50, ]
+  [ "B", "C", 250, ]
+  [ "B", "E", 250, ]
+  [ "C", "E", 350, ]
+  [ "C", "F", 100, ]
+  [ "E", "H", 200, ]
+  [ "D", "G", 350, ]
+]
+.The following edges make up the full graph:
+[
+  [ "A", "B", 10, ]
+  [ "A", "C", 100, ]
+  [ "A", "D", 100, ]
+  [ "B", "C", 10, ]
+  [ "B", "D", 100, ]
+  [ "C", "D", 10, ]
+]
+Generating least cost tree from vertex A.
+The shortest path to D is:
+A->B->C->D
+The following edges are unused:
+[
+  [ "A", "C", 100, ]
+  [ "A", "D", 100, ]
+  [ "B", "D", 100, ]
+]
+.The following edges make up the full graph:
+[
+  [ "A", "B", 10, ]
+  [ "A", "C", 100, ]
+  [ "A", "D", 100, ]
+  [ "B", "C", 10, ]
+  [ "B", "D", 100, ]
+  [ "C", "D", 10, ]
+  [ "B", "E", 10, ]
+  [ "C", "F", 10, ]
+  [ "D", "G", 10, ]
+]
+Generating least cost tree from vertex A.
+The shortest path to G is:
+A->B->C->D->G
+The following edges are unused:
+[
+  [ "A", "C", 100, ]
+  [ "A", "D", 100, ]
+  [ "B", "D", 100, ]
+  [ "B", "E", 10, ]
+  [ "C", "F", 10, ]
+]
+.
+Finished in 0.016 seconds.
+
+4 tests, 4 assertions, 0 failures, 0 errors
