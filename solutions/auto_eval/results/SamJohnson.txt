@@ -1,0 +1,8 @@
+***** SamJohnson *****
+
+Loaded suite code
+Started
+....
+Finished in 0.046 seconds.
+
+4 tests, 4 assertions, 0 failures, 0 errors

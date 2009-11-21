@@ -1,0 +1,61 @@
+***** GlennGoodrich *****
+
+Loaded suite code
+Started
+FEFE
+Finished in 0.032 seconds.
+
+  1) Failure:
+test_example_0(TestShortCircuit) [./RPCFN_#3_TestCase.rb:15]:
+<["AB", "BC", "BE", "CE", "DF", "EG"]> expected but was
+<["AB", "BC", "BE", "CF", "DF", "FG"]>.
+
+  2) Error:
+test_example_1(TestShortCircuit):
+NoMethodError: undefined method `ohmage' for nil:NilClass
+    code.rb:90:in `calculateOhmageForRoute'
+    code.rb:115:in `call'
+    code.rb:115:in `getNodesForRoute'
+    code.rb:217:in `each_with_index'
+    code.rb:110:in `each'
+    code.rb:110:in `each_with_index'
+    code.rb:110:in `getNodesForRoute'
+    code.rb:89:in `calculateOhmageForRoute'
+    code.rb:75:in `pathOfLeastResistance'
+    code.rb:74:in `each'
+    code.rb:74:in `pathOfLeastResistance'
+    code.rb:223:in `bridge_method'
+    ./RPCFN_#3_TestCase.rb:20:in `test_example_1'
+
+  3) Failure:
+test_example_2(TestShortCircuit) [./RPCFN_#3_TestCase.rb:25]:
+<["AC", "AD", "BD"]> expected but was
+<["AC", "AD", "BC", "CD"]>.
+
+  4) Error:
+test_example_3(TestShortCircuit):
+NoMethodError: undefined method `endNode' for nil:NilClass
+    code.rb:61:in `findRoutes'
+    code.rb:47:in `each'
+    code.rb:47:in `findRoutes'
+    code.rb:62:in `findRoutes'
+    code.rb:47:in `each'
+    code.rb:47:in `findRoutes'
+    code.rb:62:in `findRoutes'
+    code.rb:47:in `each'
+    code.rb:47:in `findRoutes'
+    code.rb:62:in `findRoutes'
+    code.rb:47:in `each'
+    code.rb:47:in `findRoutes'
+    code.rb:62:in `findRoutes'
+    code.rb:47:in `each'
+    code.rb:47:in `findRoutes'
+    code.rb:62:in `findRoutes'
+    code.rb:47:in `each'
+    code.rb:47:in `findRoutes'
+    code.rb:37:in `findPossibleRoutes'
+    code.rb:70:in `pathOfLeastResistance'
+    code.rb:223:in `bridge_method'
+    ./RPCFN_#3_TestCase.rb:30:in `test_example_3'
+
+4 tests, 2 assertions, 2 failures, 2 errors
