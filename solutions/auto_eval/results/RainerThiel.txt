@@ -1,0 +1,18 @@
+***** RainerThiel *****
+
+Loaded suite code
+Started
+FF..
+Finished in 0.015625 seconds.
+
+  1) Failure:
+test_example_0(TestShortCircuit) [C:/rubyprograms/RPCFN/Gautam_Rege/short_circuit/solutions/auto_eval/RPCFN_#3_TestCase.rb:15]:
+<["AB", "BC", "BE", "CE", "DF", "EG"]> expected but was
+<["AB", "BC", "BE", "CD", "CE", "DF", "EG"]>.
+
+  2) Failure:
+test_example_1(TestShortCircuit) [C:/rubyprograms/RPCFN/Gautam_Rege/short_circuit/solutions/auto_eval/RPCFN_#3_TestCase.rb:20]:
+<["AB", "BC", "BE", "CE", "CF", "DG", "EH"]> expected but was
+<["AB", "BC", "BE", "CD", "CE", "CF", "DG", "EH", "FG"]>.
+
+4 tests, 4 assertions, 2 failures, 0 errors, 0 skips
